@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>AI Project Assistant Platform — Yevhenii Stolovoi</title>
+  <meta name="description" content="Case study: multi-agent AI platform that analyzes project descriptions, generates technical specifications, commercial proposals, and website design concepts.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="../index.html" class="nav-logo">YS<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#stack">Stack</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="project-hero-bg" aria-hidden="true">
+      <div class="project-hero-orb project-hero-orb--1"></div>
+      <div class="project-hero-orb project-hero-orb--2"></div>
+    </div>
+    <div class="container project-hero-content">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to Projects
+      </a>
+      <span class="project-hero-eyebrow">Project 06</span>
+      <h1 class="project-hero-title">AI Project Assistant Platform</h1>
+      <p class="project-hero-desc">
+        A multi-agent AI system that analyzes project descriptions, generates technical specifications, prepares commercial proposals, and produces website design concepts—so teams can move from a brief to structured deliverables faster.
+      </p>
+      <div class="project-hero-meta">
+        <span>LLM APIs</span>
+        <span>Multi-Agent</span>
+        <span>Web App</span>
+        <span>Automation</span>
+        <span>APIs</span>
+      </div>
+      <div class="project-hero-actions">
+        <a href="#" class="btn btn-primary"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Overview</h2>
+      <div class="project-section-text">
+        <p>
+          An intelligent platform where multiple AI agents work together to interpret a project brief and produce aligned outputs—specs, proposals, and design direction—without forcing stakeholders through disconnected tools or copy-paste workflows.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Problem</h2>
+      <div class="project-section-text">
+        <p>
+          Creating project specifications, commercial proposals, and design concepts manually is time-consuming and inconsistent. Context gets lost between documents, tone and structure vary by author, and iteration cycles stretch when every artifact is rebuilt by hand.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Solution</h2>
+      <div class="project-section-text">
+        <p>
+          A multi-agent system where specialized AI agents handle different tasks in a pipeline: one pass focuses on understanding requirements, the next on technical structure, then commercial framing, then visual and UX-oriented design concepts—each stage feeding the next with shared context.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Architecture</h2>
+      <div class="project-section-text">
+        <p>
+          Data flows through the pipeline from a single project input to consolidated final output, with each agent responsible for a distinct transformation.
+        </p>
+      </div>
+      <div class="arch-diagram" role="img" aria-label="Pipeline from project input through analysis, specification, proposal, and design agents to final output">
+        <div class="arch-node">Project Input</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Analysis Agent</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Spec Generator</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Proposal Agent</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Design Agent</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Final Output</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="project-section-text">
+        <p>Core technologies supporting orchestration, APIs, and the web experience.</p>
+      </div>
+      <div class="tech-stack-grid">
+        <span>LLM APIs (OpenAI, Anthropic)</span>
+        <span>JavaScript</span>
+        <span>Multi-Agent Logic</span>
+        <span>REST APIs</span>
+        <span>Web Interface</span>
+        <span>Automation Workflows</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Features</h2>
+      <div class="project-section-text">
+        <p>What the platform delivers across the project lifecycle.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item glass-card">
+          <strong>Project Analysis</strong>
+          An agent ingests and analyzes requirements so downstream steps reflect scope, constraints, and priorities.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Technical Specification</strong>
+          Auto-generated specs that translate the brief into structured technical detail ready for engineering review.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Commercial Proposals</strong>
+          AI-generated proposals aligned with the analyzed project and spec, suitable for stakeholders and clients.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Design Concepts</strong>
+          Website design generation that explores layout and visual direction informed by the same shared context.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">My Role</h2>
+      <ul class="role-list">
+        <li>System architecture</li>
+        <li>Multi-agent pipeline design</li>
+        <li>LLM API integration</li>
+        <li>Frontend development</li>
+        <li>Prompt engineering</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Screenshots</h2>
+      <div class="screenshots-placeholder glass-card">
+        Screenshots coming soon
+      </div>
+    </div>
+  </section>
+
+  <section class="project-cta">
+    <div class="container">
+      <h2 class="project-cta-title">Interested in this project?</h2>
+      <div class="project-cta-buttons">
+        <a href="../index.html#projects" class="btn btn-outline"><span>Back to Portfolio</span></a>
+        <a href="#" class="btn btn-primary"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Yevhenii Stolovoi</span>
+      <span class="footer-sep"></span>
+      <span class="footer-copy">&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+      var nav = document.getElementById('nav');
+      var navToggle = document.getElementById('navToggle');
+      var navLinks = document.getElementById('navLinks');
+
+      function onScroll() {
+        if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () {
+          navToggle.classList.toggle('active');
+          navLinks.classList.toggle('open');
+          document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+        });
+        navLinks.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

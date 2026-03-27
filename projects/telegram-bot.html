@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Telegram Automation Bot — Yevhenii Stolovoi</title>
+  <meta name="description" content="Case study: Telegram automation bot powered by n8n, webhooks, Telegram Bot API, and multi-step API integrations.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="../index.html" class="nav-logo">YS<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#stack">Stack</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="project-hero-bg" aria-hidden="true">
+      <div class="project-hero-orb project-hero-orb--1"></div>
+      <div class="project-hero-orb project-hero-orb--2"></div>
+    </div>
+    <div class="container project-hero-content">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to Projects
+      </a>
+      <span class="project-hero-eyebrow">Project 05</span>
+      <h1 class="project-hero-title">Telegram Automation <span class="accent-gradient">Bot</span></h1>
+      <p class="project-hero-desc">
+        An automation-focused Telegram bot that orchestrates n8n workflows, listens through the Telegram Bot API, reacts to webhook events, and chains multi-step REST integrations so messages trigger reliable, repeatable actions across external systems.
+      </p>
+      <div class="project-hero-meta">
+        <span>n8n</span>
+        <span>Telegram API</span>
+        <span>Webhooks</span>
+        <span>Automation</span>
+      </div>
+      <div class="project-hero-actions">
+        <a href="#" class="btn btn-primary"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Overview</h2>
+      <div class="project-section-text">
+        <p>
+          This project is a Telegram bot built for automated workflows: it turns chats and commands into structured events that downstream systems can handle without manual copy-paste or one-off scripts.
+        </p>
+        <p>
+          The bot acts as the user-facing entry point while orchestration, retries, and API calls live in visual workflows—making it easier to extend behavior as new integrations are added.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Problem</h2>
+      <div class="project-section-text">
+        <p>
+          Day-to-day messaging often hides repetitive work: answering the same questions, forwarding updates, or manually triggering steps in other tools. Teams need automated responses and dependable hand-offs to CRMs, ticketing, or internal APIs.
+        </p>
+        <p>
+          Without a clear pipeline from Telegram to those systems, integrations become fragile ad-hoc scripts that are hard to monitor, version, or reuse when requirements change.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Solution</h2>
+      <div class="project-section-text">
+        <p>
+          The solution pairs Telegram’s Bot API with webhook-driven triggers in n8n so each meaningful message or callback becomes a workflow run. Steps can validate input, call REST endpoints, transform JSON payloads, and post results back to the chat.
+        </p>
+        <p>
+          Multi-step automation stays observable in one place: branching logic, error handling, and credentials are managed in n8n while the bot remains a thin, responsive interface for users.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Architecture</h2>
+      <div class="project-section-text">
+        <p>
+          Traffic flows from the user through Telegram’s platform into a webhook endpoint, then through an n8n workflow that performs API calls or other actions before sending the final reply.
+        </p>
+      </div>
+      <div class="arch-diagram" role="img" aria-label="Flow from Telegram user through Bot API, webhook, n8n, APIs, to response">
+        <div class="arch-node">Telegram User</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Telegram Bot API</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Webhook</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">n8n Workflow</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">API / Action</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Response</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="project-section-text">
+        <p>Core technologies used for the bot, orchestration, and integrations.</p>
+      </div>
+      <div class="tech-stack-grid">
+        <span>n8n</span>
+        <span>Telegram Bot API</span>
+        <span>Webhooks</span>
+        <span>JavaScript</span>
+        <span>REST APIs</span>
+        <span>JSON</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Features</h2>
+      <div class="project-section-text">
+        <p>Capabilities that make the bot practical for real automation workloads.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item glass-card">
+          <strong>Automated Responses</strong>
+          Rule-driven replies and structured messaging so users get consistent answers without manual intervention.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Webhook Integration</strong>
+          Inbound webhook handling connects Telegram updates to n8n runs with low latency and clear event boundaries.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Multi-Step Workflows</strong>
+          Chained nodes for validation, enrichment, and branching logic before a final message or side effect is produced.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>API Connections</strong>
+          REST-based integrations with JSON payloads to sync data or trigger actions in external services.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">My Role</h2>
+      <div class="project-section-text">
+        <p>Responsibilities across the bot surface, workflow design, and shipping a stable integration.</p>
+      </div>
+      <ul class="role-list">
+        <li>Bot development</li>
+        <li>n8n workflow design</li>
+        <li>API integration</li>
+        <li>Testing &amp; deployment</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Screenshots</h2>
+      <div class="project-section-text">
+        <p>Workflow editor views, chat examples, and integration diagrams can be added here when ready.</p>
+      </div>
+      <div class="screenshots-placeholder glass-card">
+        Screenshots placeholder — add bot UI, n8n workflow captures, or webhook logs when available.
+      </div>
+    </div>
+  </section>
+
+  <section class="project-cta">
+    <div class="container">
+      <h2 class="project-cta-title">Explore more</h2>
+      <div class="project-cta-buttons">
+        <a href="../index.html#projects" class="btn btn-primary"><span>Back to Portfolio</span></a>
+        <a href="#" class="btn btn-outline"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Yevhenii Stolovoi</span>
+      <span class="footer-sep"></span>
+      <span class="footer-copy">&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script>
+(function(){var nav=document.getElementById('nav');window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>50)},{passive:true});var tog=document.getElementById('navToggle'),links=document.getElementById('navLinks');if(tog)tog.addEventListener('click',function(){tog.classList.toggle('active');links.classList.toggle('open');document.body.style.overflow=links.classList.contains('open')?'hidden':'';});if(links)links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){tog.classList.remove('active');links.classList.remove('open');document.body.style.overflow='';});});})();
+  </script>
+</body>
+</html>

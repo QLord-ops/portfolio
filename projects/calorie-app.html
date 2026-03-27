@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Calorie Tracking App — Yevhenii Stolovoi</title>
+  <meta name="description" content="Case study: full-stack calorie tracking app with REST API, SQLite/MySQL, and React UI.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="../index.html" class="nav-logo">YS<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#stack">Stack</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="project-hero">
+    <div class="project-hero-bg" aria-hidden="true">
+      <div class="project-hero-orb project-hero-orb--1"></div>
+      <div class="project-hero-orb project-hero-orb--2"></div>
+    </div>
+    <div class="container project-hero-content">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to projects
+      </a>
+      <span class="project-hero-eyebrow">Project 03</span>
+      <h1 class="project-hero-title">Calorie Tracking App</h1>
+      <p class="project-hero-desc">
+        A full-stack nutrition tracking application with a database-backed REST API and a modern React interface for logging meals, monitoring calories, and reviewing nutrition analytics in one focused workflow.
+      </p>
+      <div class="project-hero-meta">
+        <span>React</span>
+        <span>REST API</span>
+        <span>SQLite</span>
+        <span>MySQL</span>
+      </div>
+      <div class="project-hero-actions">
+        <a href="#" class="btn btn-primary"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-section-title">Overview</h2>
+        <div class="project-section-text">
+          <p>This project is a full-stack calorie tracking application designed to help users record food intake, understand daily energy balance, and explore nutrition trends over time without the clutter of generic fitness apps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-section-title">Problem</h2>
+        <div class="project-section-text">
+          <p>Tracking nutrition day after day is tedious, and many popular apps overload the experience with ads, upsells, and features that get in the way of the core habit: logging what you eat and seeing the numbers clearly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-section-title">Solution</h2>
+        <div class="project-section-text">
+          <p>The app keeps the interface clean and task-focused while a proper database and REST API power reliable storage, queries, and analytics so calorie and macro data stay accurate and easy to revisit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-section-title">Architecture</h2>
+        <div class="project-section-text">
+          <p>Requests flow from the browser through the API layer into persistent storage, with analytics computed or aggregated from that data for dashboards and summaries.</p>
+        </div>
+        <div class="arch-diagram" role="img" aria-label="User to React UI to REST API to Database to Analytics">
+          <div class="arch-node">User</div>
+          <span class="arch-arrow" aria-hidden="true">→</span>
+          <div class="arch-node">React UI</div>
+          <span class="arch-arrow" aria-hidden="true">→</span>
+          <div class="arch-node">REST API</div>
+          <span class="arch-arrow" aria-hidden="true">→</span>
+          <div class="arch-node">Database</div>
+          <span class="arch-arrow" aria-hidden="true">→</span>
+          <div class="arch-node">Analytics</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-section-title">Tech Stack</h2>
+        <div class="project-section-text">
+          <p>Technologies used across the client, API, and data layers.</p>
+        </div>
+        <div class="tech-stack-grid">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>REST API</span>
+          <span>SQLite</span>
+          <span>MySQL</span>
+          <span>CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-section-title">Features</h2>
+        <div class="project-section-text">
+          <p>Core capabilities that support daily logging and longer-term insight.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item">
+            <strong>Food Logging</strong>
+            Add meals and items quickly so daily intake stays up to date with minimal friction.
+          </div>
+          <div class="feature-item">
+            <strong>Calorie Calculator</strong>
+            Totals update as you log food so you always see progress toward your calorie target.
+          </div>
+          <div class="feature-item">
+            <strong>Nutrition Analytics</strong>
+            Charts and summaries highlight trends in macros and energy over days and weeks.
+          </div>
+          <div class="feature-item">
+            <strong>User Profiles</strong>
+            Personalized goals and settings persist per user through the backend and database.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-section-title">My Role</h2>
+        <div class="project-section-text">
+          <p>End-to-end ownership of the product build, from interface to API and persistence.</p>
+        </div>
+        <ul class="role-list">
+          <li>Designed and implemented the React front end and component structure</li>
+          <li>Built the REST API and request/response contracts for logging and analytics</li>
+          <li>Modeled data and migrations for SQLite and MySQL environments</li>
+          <li>Wrote styling and layout for a consistent, readable UI</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-section-title">Screenshots</h2>
+        <div class="project-section-text">
+          <p>Visual walkthrough of the app will appear here once the build is deployed.</p>
+        </div>
+        <div class="screenshots-placeholder">Screenshots coming soon</div>
+      </div>
+    </section>
+  </main>
+
+  <section class="project-cta">
+    <div class="container">
+      <h2 class="project-cta-title">Explore the project</h2>
+      <div class="project-cta-buttons">
+        <a href="../index.html#projects" class="btn btn-outline"><span>Back to Portfolio</span></a>
+        <a href="#" class="btn btn-primary"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Yevhenii Stolovoi</span>
+      <span class="footer-sep"></span>
+      <span class="footer-copy">&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script>
+(function(){var nav=document.getElementById('nav');window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>50)},{passive:true});var tog=document.getElementById('navToggle'),links=document.getElementById('navLinks');if(tog)tog.addEventListener('click',function(){tog.classList.toggle('active');links.classList.toggle('open');document.body.style.overflow=links.classList.contains('open')?'hidden':'';});if(links)links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){tog.classList.remove('active');links.classList.remove('open');document.body.style.overflow='';});});})();
+  </script>
+</body>
+</html>

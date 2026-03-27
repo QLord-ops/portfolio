@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>AI Automation Systems — Project | Yevhenii Stolovoi</title>
+  <meta name="description" content="Case study: AI automation workflows with LLM APIs, prompt engineering, integrations, and scalable pipelines.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="../index.html" class="nav-logo">YS<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#stack">Stack</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="project-hero">
+    <div class="project-hero-bg" aria-hidden="true">
+      <div class="project-hero-orb project-hero-orb--1"></div>
+      <div class="project-hero-orb project-hero-orb--2"></div>
+    </div>
+    <div class="project-hero-content container">
+      <a href="../index.html#projects" class="project-back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to Projects
+      </a>
+      <span class="project-hero-eyebrow">Project 02</span>
+      <h1 class="project-hero-title">AI Automation Systems</h1>
+      <p class="project-hero-desc">
+        End-to-end automation workflows that combine LLM APIs with real-world integrations. The system covers prompt engineering, reliable orchestration, and API-driven pipelines so repetitive work scales without sacrificing quality or control.
+      </p>
+      <div class="project-hero-meta">
+        <span>OpenAI API</span>
+        <span>Anthropic API</span>
+        <span>Automation Workflows</span>
+        <span>APIs</span>
+      </div>
+      <div class="project-hero-actions">
+        <a href="#" class="btn btn-primary">Live Demo</a>
+        <a href="#" class="btn btn-outline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Overview</h2>
+      <div class="project-section-text">
+        <p>
+          This project showcases how large language models can be wired into production-style automation: structured prompts, retries, and outputs that feed downstream tools. The focus is on dependable flows rather than one-off chat experiments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Problem</h2>
+      <div class="project-section-text">
+        <p>
+          Manual, repetitive tasks—drafting variants, classifying requests, formatting data—do not scale as volume grows. Teams also struggle to keep content and operations consistent when everything depends on human throughput.
+        </p>
+        <p>
+          Without clear pipelines, LLM usage becomes fragile: inconsistent prompts, hard-to-debug failures, and integrations that break when APIs or schemas change.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Solution</h2>
+      <div class="project-section-text">
+        <p>
+          AI-powered automation pipelines connect triggers to LLM calls and post-processing so each run is predictable. JSON-first responses, validation steps, and webhook or REST handoffs turn model output into concrete actions in other systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Architecture</h2>
+      <div class="project-section-text">
+        <p>
+          Data moves linearly from user intent through execution to side effects, with the LLM as a dedicated processing stage.
+        </p>
+      </div>
+      <div class="arch-diagram" role="img" aria-label="Flow from user to output">
+        <div class="arch-node">User</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Trigger</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">LLM API</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Processing</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Output/Action</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="project-section-text">
+        <p>
+          Core technologies used across providers, glue code, and delivery channels.
+        </p>
+      </div>
+      <div class="tech-stack-grid">
+        <span>OpenAI API</span>
+        <span>Anthropic API</span>
+        <span>JavaScript</span>
+        <span>REST APIs</span>
+        <span>Webhooks</span>
+        <span>JSON</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Features</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <strong>Prompt Engineering</strong>
+          System and user prompts, few-shot examples, and output constraints tuned for stable, parseable responses.
+        </div>
+        <div class="feature-item">
+          <strong>API Integrations</strong>
+          REST clients, authentication, rate limits, and error handling across OpenAI, Anthropic, and internal services.
+        </div>
+        <div class="feature-item">
+          <strong>Workflow Automation</strong>
+          Chained steps, triggers, and retries so tasks run end-to-end with minimal manual intervention.
+        </div>
+        <div class="feature-item">
+          <strong>Content Generation</strong>
+          Structured generation for summaries, variants, and metadata that feed CMS, email, or analytics tools.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">My Role</h2>
+      <ul class="role-list">
+        <li>Designed automation flows and integration boundaries between LLMs and downstream systems</li>
+        <li>Implemented and iterated prompts, schemas, and validation for reliable JSON outputs</li>
+        <li>Built and documented API and webhook connectors for triggers and delivery</li>
+        <li>Tested edge cases, failures, and rate limits to keep pipelines production-minded</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Screenshots</h2>
+      <div class="screenshots-placeholder">
+        Screenshots and demo media can be placed here.
+      </div>
+    </div>
+  </section>
+
+  <section class="project-cta">
+    <div class="container">
+      <h2 class="project-cta-title">Interested in this project?</h2>
+      <div class="project-cta-buttons">
+        <a href="../index.html#projects" class="btn btn-outline">Back to Portfolio</a>
+        <a href="#" class="btn btn-primary">Live Demo</a>
+        <a href="#" class="btn btn-outline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner container">
+      <span class="footer-name">Yevhenii Stolovoi</span>
+      <span class="footer-sep"></span>
+      <span class="footer-copy">© 2026</span>
+    </div>
+  </footer>
+
+  <script>
+(function(){
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>50)},{passive:true});
+  var tog=document.getElementById('navToggle'),links=document.getElementById('navLinks');
+  if(tog)tog.addEventListener('click',function(){tog.classList.toggle('active');links.classList.toggle('open');document.body.style.overflow=links.classList.contains('open')?'hidden':'';});
+  if(links)links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){tog.classList.remove('active');links.classList.remove('open');document.body.style.overflow='';});});
+})();
+  </script>
+</body>
+</html>

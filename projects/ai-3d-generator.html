@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>AI 3D Image Generator — Yevhenii Stolovoi</title>
+  <meta name="description" content="Case study: generative AI web app for creating 3D-style images from text prompts with a clean, intuitive interface.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="../index.html" class="nav-logo">YS<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#stack">Stack</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="project-hero-bg" aria-hidden="true">
+      <div class="project-hero-orb project-hero-orb--1"></div>
+      <div class="project-hero-orb project-hero-orb--2"></div>
+    </div>
+    <div class="container project-hero-content">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to Projects
+      </a>
+      <span class="project-hero-eyebrow">Project 04</span>
+      <h1 class="project-hero-title">AI 3D Image <span class="accent-gradient">Generator</span></h1>
+      <p class="project-hero-desc">
+        A generative AI web application for creating 3D-style images from text prompts, built around a clean, intuitive interface so anyone can experiment with ideas without a steep learning curve.
+      </p>
+      <div class="project-hero-meta">
+        <span>AI Generation</span>
+        <span>Web Interface</span>
+        <span>APIs</span>
+      </div>
+      <div class="project-hero-actions">
+        <a href="#" class="btn btn-primary"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Overview</h2>
+      <div class="project-section-text">
+        <p>
+          This project is a generative AI application focused on image creation: users describe what they want in natural language, and the system returns visuals with a distinct 3D-inspired look suitable for concepts, mockups, and creative exploration.
+        </p>
+        <p>
+          The product goal was to keep the experience approachable—minimal friction from prompt to result—while still exposing enough control that power users can refine outputs over several iterations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Problem</h2>
+      <div class="project-section-text">
+        <p>
+          Creating convincing 3D visuals traditionally means expensive software, specialized hardware, and a long ramp-up in modeling, lighting, and rendering skills. Small teams and individuals often cannot justify that investment for one-off concepts or rapid ideation.
+        </p>
+        <p>
+          There was a need for a faster path from idea to image—something that lowers the barrier without pretending to replace full production pipelines, but works beautifully for exploration and communication.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Solution</h2>
+      <div class="project-section-text">
+        <p>
+          The solution is text-to-3D-style image generation powered by AI: the user writes a prompt, the app sends it to a model API, and the pipeline returns processed imagery that reads as dimensional, stylized, and ready to save or share.
+        </p>
+        <p>
+          The web interface wraps that flow in clear steps—compose, generate, review—so the technical stack stays invisible while remaining reliable for repeat use and iteration.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Architecture</h2>
+      <div class="project-section-text">
+        <p>
+          Data moves from the browser through prompt capture, remote model inference, lightweight image handling, and finally to the user as a downloadable or viewable 3D-style render.
+        </p>
+      </div>
+      <div class="arch-diagram" role="img" aria-label="Flow from user prompt to 3D-style image output">
+        <div class="arch-node">User</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Prompt Input</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">AI Model API</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Image Processing</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">3D Image Output</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="project-section-text">
+        <p>Technologies spanning generation, client UI, and API integration.</p>
+      </div>
+      <div class="tech-stack-grid">
+        <span>AI Image Generation</span>
+        <span>JavaScript</span>
+        <span>Web Interface</span>
+        <span>REST APIs</span>
+        <span>CSS</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Features</h2>
+      <div class="project-section-text">
+        <p>Core capabilities that define the product experience.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item glass-card">
+          <strong>Text-to-Image Generation</strong>
+          Natural-language prompts drive the model so users can iterate quickly from concept to visual without manual modeling.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>3D Style Rendering</strong>
+          Outputs are tuned for a dimensional, polished look that reads as 3D-inspired rather than flat illustration alone.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Prompt Optimization</strong>
+          Guidance and refinement patterns help users get stronger results as they learn what the model responds to best.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Gallery &amp; Download</strong>
+          Generated images can be reviewed in context and exported for use in decks, social posts, or further design work.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">My Role</h2>
+      <div class="project-section-text">
+        <p>Ownership across product surface, integration, and creative workflow.</p>
+      </div>
+      <ul class="role-list">
+        <li>Full-stack development</li>
+        <li>AI API integration</li>
+        <li>UI/UX design</li>
+        <li>Prompt engineering</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Screenshots</h2>
+      <div class="project-section-text">
+        <p>Interface and result examples will be added when assets are ready.</p>
+      </div>
+      <div class="screenshots-placeholder glass-card">
+        Screenshots coming soon
+      </div>
+    </div>
+  </section>
+
+  <section class="project-cta">
+    <div class="container">
+      <h2 class="project-cta-title">Interested in this project?</h2>
+      <div class="project-cta-buttons">
+        <a href="../index.html#projects" class="btn btn-outline"><span>Back to Portfolio</span></a>
+        <a href="#" class="btn btn-primary"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Yevhenii Stolovoi</span>
+      <span class="footer-sep"></span>
+      <span class="footer-copy">&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+      var nav = document.getElementById('nav');
+      var navToggle = document.getElementById('navToggle');
+      var navLinks = document.getElementById('navLinks');
+
+      function onScroll() {
+        if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () {
+          navToggle.classList.toggle('active');
+          navLinks.classList.toggle('open');
+          document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+        });
+        navLinks.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

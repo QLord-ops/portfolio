@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>B2B Website Platform — Yevhenii Stolovoi</title>
+  <meta name="description" content="Case study: professional B2B websites and digital platforms with responsive design, structured UI/UX, and polished digital presentation.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="../index.html" class="nav-logo">YS<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#stack">Stack</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="project-hero-bg" aria-hidden="true">
+      <div class="project-hero-orb project-hero-orb--1"></div>
+      <div class="project-hero-orb project-hero-orb--2"></div>
+    </div>
+    <div class="container project-hero-content">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to Projects
+      </a>
+      <span class="project-hero-eyebrow">Project 01</span>
+      <h1 class="project-hero-title">B2B Website <span class="accent-gradient">Platform</span></h1>
+      <p class="project-hero-desc">
+        A full case study on building business websites and digital platforms for companies: responsive layouts, a clear information architecture, thoughtful UI/UX, and a digital presentation that reads as credible, fast, and easy to maintain.
+      </p>
+      <div class="project-hero-meta">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Next.js</span>
+        <span>Vercel</span>
+      </div>
+      <div class="project-hero-actions">
+        <a href="#" class="btn btn-primary"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Overview</h2>
+      <div class="project-section-text">
+        <p>
+          This project focused on delivering professional B2B websites: marketing pages, product storytelling, trust signals, and conversion-oriented flows. The goal was to give teams a platform that looks sharp out of the box while staying flexible enough to grow with new services, case studies, and integrations.
+        </p>
+        <p>
+          Emphasis was placed on clarity for decision-makers—scannable sections, strong typography hierarchy, and consistent components so content editors can ship updates without breaking the design system.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Problem</h2>
+      <div class="project-section-text">
+        <p>
+          Many businesses still rely on outdated sites or fragmented tools: inconsistent branding, poor mobile experience, and slow pages that undermine trust. Stakeholders need a modern web presence that communicates competence, loads quickly, and supports lead generation without a dedicated engineering team for every copy change.
+        </p>
+        <p>
+          The challenge was to bridge marketing needs (messaging, SEO-friendly structure) with engineering quality (performance, accessibility baseline, deploy pipeline) in one cohesive product.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Solution</h2>
+      <div class="project-section-text">
+        <p>
+          I designed and built a structured site platform: reusable sections, a scalable page model, and a frontend that prioritizes perceived performance and readability. Content is organized for B2B narratives—hero, proof, capabilities, pricing or contact paths—with responsive behavior tested across breakpoints.
+        </p>
+        <p>
+          The stack pairs a component-driven UI in React and Next.js with static and dynamic rendering where appropriate, deployed on Vercel for predictable previews and production rollouts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Architecture</h2>
+      <div class="project-section-text">
+        <p>
+          Request flow moves from the end user through the client application, content and APIs, hosting, and the live site visitors experience.
+        </p>
+      </div>
+      <div class="arch-diagram" role="img" aria-label="Architecture flow from user to live site">
+        <div class="arch-node">User</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Frontend</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">CMS / API</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Hosting</div>
+        <span class="arch-arrow" aria-hidden="true">→</span>
+        <div class="arch-node">Live Site</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="project-section-text">
+        <p>Technologies used across presentation, application logic, and delivery.</p>
+      </div>
+      <div class="tech-stack-grid">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Next.js</span>
+        <span>Vercel</span>
+        <span>Responsive layout</span>
+        <span>Component architecture</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Features</h2>
+      <div class="project-section-text">
+        <p>Highlights that matter for B2B sites and ongoing operations.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item glass-card">
+          <strong>Responsive design system</strong>
+          Layouts and components adapt cleanly from mobile to desktop, with shared spacing and type scales so pages stay consistent.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Structured UI/UX</strong>
+          Clear navigation, scannable sections, and focused CTAs tailored to business readers and procurement-style journeys.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Digital presentation</strong>
+          Polished visuals, subtle motion where appropriate, and brand-forward treatment without sacrificing load time.
+        </div>
+        <div class="feature-item glass-card">
+          <strong>Content-ready platform</strong>
+          Patterns that support case studies, service pages, and updates through a maintainable component and section model.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">My Role</h2>
+      <div class="project-section-text">
+        <p>End-to-end ownership across discovery, build, and delivery.</p>
+      </div>
+      <ul class="role-list">
+        <li>Product and information architecture for B2B page types and user flows</li>
+        <li>UI implementation with React and Next.js, including reusable section components</li>
+        <li>Styling, responsive behavior, and interaction details aligned with brand guidelines</li>
+        <li>Integration with CMS/API-driven content and deployment setup on Vercel</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <div class="container">
+      <h2 class="project-section-title">Screenshots</h2>
+      <div class="project-section-text">
+        <p>Visual documentation of key pages and components will appear here.</p>
+      </div>
+      <div class="screenshots-placeholder glass-card">
+        Screenshots and UI captures — add imagery or embeds when available.
+      </div>
+    </div>
+  </section>
+
+  <section class="project-cta">
+    <div class="container">
+      <h2 class="project-cta-title">Explore more</h2>
+      <div class="project-cta-buttons">
+        <a href="../index.html#projects" class="btn btn-primary"><span>Back to Portfolio</span></a>
+        <a href="#" class="btn btn-outline"><span>Live Demo</span></a>
+        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Yevhenii Stolovoi</span>
+      <span class="footer-sep"></span>
+      <span class="footer-copy">&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+      var nav = document.getElementById('nav');
+      var navToggle = document.getElementById('navToggle');
+      var navLinks = document.getElementById('navLinks');
+
+      function onScroll() {
+        if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () {
+          navToggle.classList.toggle('active');
+          navLinks.classList.toggle('open');
+          document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+        });
+        navLinks.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
