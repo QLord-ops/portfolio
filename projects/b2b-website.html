@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>B2B Website Platform — Yevhenii Stolovoi</title>
-  <meta name="description" content="Case study: professional B2B websites and digital platforms with responsive design, structured UI/UX, and polished digital presentation.">
+  <title>AIONEX — Digital Systems &amp; Automation | Yevhenii Stolovoi</title>
+  <meta name="description" content="Case study: AIONEX marketing website — digital systems and automation, Germany. Built with React, Next.js, deployed on Vercel.">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="project-page.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,21 +42,20 @@
         Back to Projects
       </a>
       <span class="project-hero-eyebrow">Project 01</span>
-      <h1 class="project-hero-title">B2B Website <span class="accent-gradient">Platform</span></h1>
+      <h1 class="project-hero-title">AIONEX <span class="accent-gradient">Digital Systems</span></h1>
       <p class="project-hero-desc">
-        A full case study on building business websites and digital platforms for companies: responsive layouts, a clear information architecture, thoughtful UI/UX, and a digital presentation that reads as credible, fast, and easy to maintain.
+        Marketing site for <a href="https://corex-website-g4ba.vercel.app/" target="_blank" rel="noopener noreferrer">AIONEX</a> — <strong>Digital Systems &amp; Automation</strong>, positioned for the German market. The experience presents the brand as a credible technology partner: clear services story, modern visual language, and performance suited to B2B discovery and contact.
       </p>
       <div class="project-hero-meta">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
         <span>React</span>
         <span>Next.js</span>
+        <span>TypeScript</span>
         <span>Vercel</span>
+        <span>Responsive</span>
       </div>
       <div class="project-hero-actions">
-        <a href="#" class="btn btn-primary"><span>Live Demo</span></a>
-        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+        <a href="https://corex-website-g4ba.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><span>Live site</span></a>
+        <a href="https://github.com/QLord-ops" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a>
       </div>
     </div>
   </header>
@@ -66,10 +65,10 @@
       <h2 class="project-section-title">Overview</h2>
       <div class="project-section-text">
         <p>
-          This project focused on delivering professional B2B websites: marketing pages, product storytelling, trust signals, and conversion-oriented flows. The goal was to give teams a platform that looks sharp out of the box while staying flexible enough to grow with new services, case studies, and integrations.
+          AIONEX focuses on digital systems and automation. The website’s role is to translate that positioning into a concise, confident web presence: who the brand is, what problems it addresses, and how prospects can engage—without noise or generic template feel.
         </p>
         <p>
-          Emphasis was placed on clarity for decision-makers—scannable sections, strong typography hierarchy, and consistent components so content editors can ship updates without breaking the design system.
+          The live deployment at <a href="https://corex-website-g4ba.vercel.app/" target="_blank" rel="noopener noreferrer">corex-website-g4ba.vercel.app</a> showcases the public-facing experience end users see in production.
         </p>
       </div>
     </div>
@@ -80,10 +79,10 @@
       <h2 class="project-section-title">Problem</h2>
       <div class="project-section-text">
         <p>
-          Many businesses still rely on outdated sites or fragmented tools: inconsistent branding, poor mobile experience, and slow pages that undermine trust. Stakeholders need a modern web presence that communicates competence, loads quickly, and supports lead generation without a dedicated engineering team for every copy change.
+          Technical and automation consultancies often sound interchangeable online. AIONEX needed a site that signals depth in systems and automation while remaining approachable for German-speaking business audiences scanning for partners.
         </p>
         <p>
-          The challenge was to bridge marketing needs (messaging, SEO-friendly structure) with engineering quality (performance, accessibility baseline, deploy pipeline) in one cohesive product.
+          The site had to load quickly, work flawlessly on mobile, and support future content updates (services, proof points, contact flows) without rebuilding layout from scratch.
         </p>
       </div>
     </div>
@@ -94,10 +93,10 @@
       <h2 class="project-section-title">Solution</h2>
       <div class="project-section-text">
         <p>
-          I designed and built a structured site platform: reusable sections, a scalable page model, and a frontend that prioritizes perceived performance and readability. Content is organized for B2B narratives—hero, proof, capabilities, pricing or contact paths—with responsive behavior tested across breakpoints.
+          A Next.js–based frontend with component-driven sections: hero, value proposition, capabilities aligned with digital systems and automation, and strong calls-to-action. Typography, spacing, and motion (where used) support a premium B2B aesthetic.
         </p>
         <p>
-          The stack pairs a component-driven UI in React and Next.js with static and dynamic rendering where appropriate, deployed on Vercel for predictable previews and production rollouts.
+          Hosting on Vercel gives edge delivery, preview deployments for iterations, and a straightforward path from commit to production—aligned with how modern marketing sites for tech brands are shipped.
         </p>
       </div>
     </div>
@@ -108,19 +107,19 @@
       <h2 class="project-section-title">Architecture</h2>
       <div class="project-section-text">
         <p>
-          Request flow moves from the end user through the client application, content and APIs, hosting, and the live site visitors experience.
+          Visitors interact with a client-rendered or hybrid Next.js application; assets and pages are served through Vercel’s network for low latency in Europe.
         </p>
       </div>
-      <div class="arch-diagram" role="img" aria-label="Architecture flow from user to live site">
-        <div class="arch-node">User</div>
+      <div class="arch-diagram" role="img" aria-label="Flow from visitor to live AIONEX site">
+        <div class="arch-node">Visitor</div>
         <span class="arch-arrow" aria-hidden="true">→</span>
-        <div class="arch-node">Frontend</div>
+        <div class="arch-node">Next.js app</div>
         <span class="arch-arrow" aria-hidden="true">→</span>
-        <div class="arch-node">CMS / API</div>
+        <div class="arch-node">Content &amp; UI</div>
         <span class="arch-arrow" aria-hidden="true">→</span>
-        <div class="arch-node">Hosting</div>
+        <div class="arch-node">Vercel</div>
         <span class="arch-arrow" aria-hidden="true">→</span>
-        <div class="arch-node">Live Site</div>
+        <div class="arch-node">Live site</div>
       </div>
     </div>
   </section>
@@ -129,17 +128,17 @@
     <div class="container">
       <h2 class="project-section-title">Tech Stack</h2>
       <div class="project-section-text">
-        <p>Technologies used across presentation, application logic, and delivery.</p>
+        <p>Technologies used for UI, application structure, and delivery.</p>
       </div>
       <div class="tech-stack-grid">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
         <span>React</span>
         <span>Next.js</span>
+        <span>TypeScript</span>
         <span>Vercel</span>
         <span>Responsive layout</span>
         <span>Component architecture</span>
+        <span>Performance</span>
+        <span>SEO-ready structure</span>
       </div>
     </div>
   </section>
@@ -148,24 +147,24 @@
     <div class="container">
       <h2 class="project-section-title">Features</h2>
       <div class="project-section-text">
-        <p>Highlights that matter for B2B sites and ongoing operations.</p>
+        <p>Highlights tailored to AIONEX’s digital systems and automation story.</p>
       </div>
       <div class="features-grid">
         <div class="feature-item glass-card">
-          <strong>Responsive design system</strong>
-          Layouts and components adapt cleanly from mobile to desktop, with shared spacing and type scales so pages stay consistent.
+          <strong>Brand &amp; positioning</strong>
+          Messaging and layout reinforce AIONEX as a digital systems and automation partner, with Germany as the geographic anchor in the site narrative.
         </div>
         <div class="feature-item glass-card">
-          <strong>Structured UI/UX</strong>
-          Clear navigation, scannable sections, and focused CTAs tailored to business readers and procurement-style journeys.
+          <strong>Modern marketing UI</strong>
+          Clear hierarchy, scannable sections, and CTAs suited to B2B buyers evaluating vendors.
         </div>
         <div class="feature-item glass-card">
-          <strong>Digital presentation</strong>
-          Polished visuals, subtle motion where appropriate, and brand-forward treatment without sacrificing load time.
+          <strong>Responsive experience</strong>
+          Consistent quality from phone to desktop—critical for field stakeholders and executives browsing on the go.
         </div>
         <div class="feature-item glass-card">
-          <strong>Content-ready platform</strong>
-          Patterns that support case studies, service pages, and updates through a maintainable component and section model.
+          <strong>Production deployment</strong>
+          Live on Vercel for fast global and regional delivery, simple rollouts, and room to grow with new pages or integrations.
         </div>
       </div>
     </div>
@@ -175,13 +174,13 @@
     <div class="container">
       <h2 class="project-section-title">My Role</h2>
       <div class="project-section-text">
-        <p>End-to-end ownership across discovery, build, and delivery.</p>
+        <p>End-to-end contribution from structure to launch.</p>
       </div>
       <ul class="role-list">
-        <li>Product and information architecture for B2B page types and user flows</li>
-        <li>UI implementation with React and Next.js, including reusable section components</li>
-        <li>Styling, responsive behavior, and interaction details aligned with brand guidelines</li>
-        <li>Integration with CMS/API-driven content and deployment setup on Vercel</li>
+        <li>Information architecture and page flow for a systems &amp; automation brand</li>
+        <li>UI implementation in React / Next.js with reusable sections and consistent design tokens</li>
+        <li>Responsive behavior, polish, and performance-minded delivery</li>
+        <li>Deployment and iteration pipeline on Vercel</li>
       </ul>
     </div>
   </section>
@@ -190,7 +189,7 @@
     <div class="container">
       <h2 class="project-section-title">Screenshots</h2>
       <div class="project-section-text">
-        <p>Visual documentation of key pages and components will appear here.</p>
+        <p>Add captures from the <a href="https://corex-website-g4ba.vercel.app/" target="_blank" rel="noopener noreferrer">live AIONEX site</a> when ready.</p>
       </div>
       <div class="screenshots-placeholder glass-card">
         Screenshots and UI captures — add imagery or embeds when available.
@@ -200,11 +199,11 @@
 
   <section class="project-cta">
     <div class="container">
-      <h2 class="project-cta-title">Explore more</h2>
+      <h2 class="project-cta-title">Open the live site</h2>
       <div class="project-cta-buttons">
         <a href="../index.html#projects" class="btn btn-primary"><span>Back to Portfolio</span></a>
-        <a href="#" class="btn btn-outline"><span>Live Demo</span></a>
-        <a href="#" class="btn btn-outline"><span>GitHub</span></a>
+        <a href="https://corex-website-g4ba.vercel.app/" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><span>Live Demo</span></a>
+        <a href="https://github.com/QLord-ops" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a>
       </div>
     </div>
   </section>

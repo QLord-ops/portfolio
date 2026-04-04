@@ -869,8 +869,23 @@ img { max-width: 100%; display: block; }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+
+/* Wide screens: Email | Location | GitHub */
+@media (min-width: 1025px) {
+  .contact-grid .contact-card:nth-child(1) {
+    grid-column: 1;
+  }
+
+  .contact-grid .contact-card:nth-child(2) {
+    grid-column: 3;
+  }
+
+  .contact-grid .contact-card:nth-child(3) {
+    grid-column: 2;
+  }
 }
 
 .contact-card {
@@ -1023,6 +1038,18 @@ a.contact-card:hover .contact-value {
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .contact-grid .contact-card:nth-child(1),
+  .contact-grid .contact-card:nth-child(2) {
+    grid-column: auto;
+  }
+
+  .contact-grid .contact-card:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    max-width: calc((100% - 16px) / 2);
+  }
 
   .hero-orb--1 { width: 500px; height: 500px; }
   .hero-orb--2 { width: 380px; height: 380px; }
@@ -1260,6 +1287,10 @@ a.contact-card:hover .contact-value {
     gap: 14px;
   }
 
+  .contact-grid .contact-card:nth-child(3) {
+    max-width: calc((100% - 14px) / 2);
+  }
+
   .contact-subtitle {
     font-size: 0.95rem;
     margin-top: -24px;
@@ -1439,6 +1470,10 @@ a.contact-card:hover .contact-value {
     gap: 10px;
   }
 
+  .contact-grid .contact-card:nth-child(3) {
+    max-width: calc((100% - 10px) / 2);
+  }
+
   .contact-card {
     padding: 24px 14px;
     gap: 10px;
@@ -1486,6 +1521,13 @@ a.contact-card:hover .contact-value {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .contact-grid .contact-card:nth-child(3) {
+    grid-column: auto;
+    justify-self: stretch;
+    max-width: none;
+    width: auto;
   }
 
   .contact-card {

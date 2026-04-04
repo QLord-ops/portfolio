@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>AI Automation Systems — Project | Yevhenii Stolovoi</title>
-  <meta name="description" content="Case study: AI automation workflows with LLM APIs, prompt engineering, integrations, and scalable pipelines.">
+  <title>Sezam — Doors &amp; Gates Website | Yevhenii Stolovoi</title>
+  <meta name="description" content="Case study: marketing site for Sezam — metal doors and gates in Kharkiv. Product-focused layout, local SEO, responsive UI, and performance.">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="project-page.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,19 +42,20 @@
         Back to Projects
       </a>
       <span class="project-hero-eyebrow">Project 02</span>
-      <h1 class="project-hero-title">AI Automation Systems</h1>
+      <h1 class="project-hero-title">Sezam — <span class="accent-gradient">Doors &amp; Gates</span></h1>
       <p class="project-hero-desc">
-        End-to-end automation workflows that combine LLM APIs with real-world integrations. The system covers prompt engineering, reliable orchestration, and API-driven pipelines so repetitive work scales without sacrificing quality or control.
+        A public-facing website for <a href="https://sezam-kharkiv.com/" target="_blank" rel="noopener noreferrer">Sezam</a>, a Kharkiv business in metal doors and gates. The site presents the product range, builds trust for local buyers, and makes it easy to get in touch—optimized for phones, quick loading, and clear structure.
       </p>
       <div class="project-hero-meta">
-        <span>OpenAI API</span>
-        <span>Anthropic API</span>
-        <span>Automation Workflows</span>
-        <span>APIs</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Responsive</span>
+        <span>UX</span>
       </div>
       <div class="project-hero-actions">
-        <a href="#" class="btn btn-primary">Live Demo</a>
-        <a href="#" class="btn btn-outline">GitHub</a>
+        <a href="https://sezam-kharkiv.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><span>Live site</span></a>
+        <a href="https://github.com/QLord-ops" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a>
       </div>
     </div>
   </section>
@@ -64,7 +65,10 @@
       <h2 class="project-section-title">Overview</h2>
       <div class="project-section-text">
         <p>
-          This project showcases how large language models can be wired into production-style automation: structured prompts, retries, and outputs that feed downstream tools. The focus is on dependable flows rather than one-off chat experiments.
+          Sezam serves customers looking for metal doors and gates in Kharkiv. The website’s job is to explain what they offer, show quality and professionalism, and turn visits into calls or messages—without overwhelming users with clutter.
+        </p>
+        <p>
+          The build focuses on a straightforward information architecture: who Sezam is, what products and services matter, and how to contact them. Copy and layout support a B2C and small-business audience that often browses on mobile.
         </p>
       </div>
     </div>
@@ -75,10 +79,10 @@
       <h2 class="project-section-title">Problem</h2>
       <div class="project-section-text">
         <p>
-          Manual, repetitive tasks—drafting variants, classifying requests, formatting data—do not scale as volume grows. Teams also struggle to keep content and operations consistent when everything depends on human throughput.
+          Local trades and installation businesses often lose leads when their web presence is slow, hard to read on phones, or fails to answer basic questions (range, service area, how to order). Visitors decide in seconds whether to stay or leave.
         </p>
         <p>
-          Without clear pipelines, LLM usage becomes fragile: inconsistent prompts, hard-to-debug failures, and integrations that break when APIs or schemas change.
+          The challenge was to reflect a credible, established brand online: clear visuals hierarchy, scannable sections, and contact paths that work equally well for first-time visitors and returning clients.
         </p>
       </div>
     </div>
@@ -89,7 +93,10 @@
       <h2 class="project-section-title">Solution</h2>
       <div class="project-section-text">
         <p>
-          AI-powered automation pipelines connect triggers to LLM calls and post-processing so each run is predictable. JSON-first responses, validation steps, and webhook or REST handoffs turn model output into concrete actions in other systems.
+          A marketing site with responsive layouts, consistent typography and spacing, and emphasis on product categories and trust signals suited to construction and home-improvement buyers.
+        </p>
+        <p>
+          Performance and accessibility basics (readable contrast, tap targets, semantic structure) help both users and search visibility for local queries around doors, gates, and Kharkiv.
         </p>
       </div>
     </div>
@@ -100,19 +107,17 @@
       <h2 class="project-section-title">Architecture</h2>
       <div class="project-section-text">
         <p>
-          Data moves linearly from user intent through execution to side effects, with the LLM as a dedicated processing stage.
+          Typical flow from discovery to contact: the visitor lands on the site, navigates content, and reaches a clear call-to-action (phone, form, or messenger, depending on how the live site is configured).
         </p>
       </div>
-      <div class="arch-diagram" role="img" aria-label="Flow from user to output">
-        <div class="arch-node">User</div>
+      <div class="arch-diagram" role="img" aria-label="Flow from visitor to contact">
+        <div class="arch-node">Visitor</div>
         <span class="arch-arrow" aria-hidden="true">→</span>
-        <div class="arch-node">Trigger</div>
+        <div class="arch-node">Pages &amp; catalog</div>
         <span class="arch-arrow" aria-hidden="true">→</span>
-        <div class="arch-node">LLM API</div>
+        <div class="arch-node">Trust &amp; details</div>
         <span class="arch-arrow" aria-hidden="true">→</span>
-        <div class="arch-node">Processing</div>
-        <span class="arch-arrow" aria-hidden="true">→</span>
-        <div class="arch-node">Output/Action</div>
+        <div class="arch-node">Contact / lead</div>
       </div>
     </div>
   </section>
@@ -122,16 +127,16 @@
       <h2 class="project-section-title">Tech Stack</h2>
       <div class="project-section-text">
         <p>
-          Core technologies used across providers, glue code, and delivery channels.
+          Front-end fundamentals for a maintainable, fast brochure-style site.
         </p>
       </div>
       <div class="tech-stack-grid">
-        <span>OpenAI API</span>
-        <span>Anthropic API</span>
+        <span>HTML</span>
+        <span>CSS</span>
         <span>JavaScript</span>
-        <span>REST APIs</span>
-        <span>Webhooks</span>
-        <span>JSON</span>
+        <span>Responsive layout</span>
+        <span>Performance</span>
+        <span>SEO-friendly structure</span>
       </div>
     </div>
   </section>
@@ -140,21 +145,21 @@
     <div class="container">
       <h2 class="project-section-title">Features</h2>
       <div class="features-grid">
-        <div class="feature-item">
-          <strong>Prompt Engineering</strong>
-          System and user prompts, few-shot examples, and output constraints tuned for stable, parseable responses.
+        <div class="feature-item glass-card">
+          <strong>Product-focused presentation</strong>
+          Doors and gates are showcased with layout and hierarchy that help visitors compare options and understand the offer at a glance.
         </div>
-        <div class="feature-item">
-          <strong>API Integrations</strong>
-          REST clients, authentication, rate limits, and error handling across OpenAI, Anthropic, and internal services.
+        <div class="feature-item glass-card">
+          <strong>Local positioning</strong>
+          Messaging and structure aligned with Kharkiv and regional customers searching for metal doors and gates.
         </div>
-        <div class="feature-item">
-          <strong>Workflow Automation</strong>
-          Chained steps, triggers, and retries so tasks run end-to-end with minimal manual intervention.
+        <div class="feature-item glass-card">
+          <strong>Mobile-first experience</strong>
+          Navigation, imagery, and CTAs behave predictably on small screens where most local traffic often arrives.
         </div>
-        <div class="feature-item">
-          <strong>Content Generation</strong>
-          Structured generation for summaries, variants, and metadata that feed CMS, email, or analytics tools.
+        <div class="feature-item glass-card">
+          <strong>Fast, lightweight pages</strong>
+          Prioritized perceived performance so the site feels snappy on typical mobile networks.
         </div>
       </div>
     </div>
@@ -164,10 +169,10 @@
     <div class="container">
       <h2 class="project-section-title">My Role</h2>
       <ul class="role-list">
-        <li>Designed automation flows and integration boundaries between LLMs and downstream systems</li>
-        <li>Implemented and iterated prompts, schemas, and validation for reliable JSON outputs</li>
-        <li>Built and documented API and webhook connectors for triggers and delivery</li>
-        <li>Tested edge cases, failures, and rate limits to keep pipelines production-minded</li>
+        <li>Structure and UX for a local service / retail-style marketing site</li>
+        <li>Implementation of responsive layouts, components, and visual consistency</li>
+        <li>Tuning content sections for clarity, trust, and conversion to contact</li>
+        <li>Performance and quality passes on real devices and breakpoints</li>
       </ul>
     </div>
   </section>
@@ -175,19 +180,22 @@
   <section class="project-section">
     <div class="container">
       <h2 class="project-section-title">Screenshots</h2>
-      <div class="screenshots-placeholder">
-        Screenshots and demo media can be placed here.
+      <div class="project-section-text">
+        <p>Capture key screens from <a href="https://sezam-kharkiv.com/" target="_blank" rel="noopener noreferrer">sezam-kharkiv.com</a> here when you add imagery.</p>
+      </div>
+      <div class="screenshots-placeholder glass-card">
+        Screenshots and UI captures — add imagery or embeds when available.
       </div>
     </div>
   </section>
 
   <section class="project-cta">
     <div class="container">
-      <h2 class="project-cta-title">Interested in this project?</h2>
+      <h2 class="project-cta-title">See the live site</h2>
       <div class="project-cta-buttons">
         <a href="../index.html#projects" class="btn btn-outline">Back to Portfolio</a>
-        <a href="#" class="btn btn-primary">Live Demo</a>
-        <a href="#" class="btn btn-outline">GitHub</a>
+        <a href="https://sezam-kharkiv.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/QLord-ops" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   </section>
