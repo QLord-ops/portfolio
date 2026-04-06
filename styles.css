@@ -749,6 +749,27 @@ img { max-width: 100%; display: block; }
   opacity: 1;
 }
 
+.project-cover {
+  margin: -12px -4px 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(79, 143, 247, 0.16);
+  background: rgba(10, 20, 38, 0.5);
+  aspect-ratio: 16 / 9;
+}
+
+.project-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--duration) var(--ease-out);
+}
+
+.project-card:hover .project-cover img {
+  transform: scale(1.03);
+}
+
 .project-number {
   font-size: 3.5rem;
   font-weight: 800;
